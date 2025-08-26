@@ -1,5 +1,11 @@
 <?php
+    include 'biblioteca.db';
 
+    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $id = $_POST['id'];
+
+        $sql = "DELETE FROM autores WHERE id = $id";
+    }
 
 
 ?>
